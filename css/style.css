@@ -1,0 +1,105 @@
+.ns-TabsModule {
+  width: 100%;
+  text-align: center;
+}
+
+.ns-TabNav {
+  position: relative; 
+  font-size: 0; /* wipe out any unwanted whitespace betweeen inline elements */
+  border-bottom: 1px solid #555;
+}
+
+.ns-TabNav .ns-TabNav_Link {
+    display: inline-block;
+    margin: 0 11px;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: calc(11px * 4);
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+.ns-TabNav .ns-TabNav_Link span {
+      font-size: inherit;
+      line-height: inherit;
+      letter-spacing: 1px;
+    }
+
+.ns-TabNav .ns-TabNav_Indicator {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background-color: indianred;
+    transition-property: left, background-color, -webkit-transform;
+    transition-property: transform, left, background-color;
+    transition-property: transform, left, background-color, -webkit-transform;
+    transition-duration: .2s;
+    -webkit-transform-origin: 0;
+            transform-origin: 0;
+    -webkit-transform: translate3d(0, 0, 0) scaleX(0);
+            transform: translate3d(0, 0, 0) scaleX(0);
+    opacity: 0;
+    -webkit-animation: fadeMeIn .2s forwards;
+            animation: fadeMeIn .2s forwards;
+    -webkit-animation-delay: .2s;
+            animation-delay: .2s;
+  }
+
+.ns-TabPanel {
+  padding: 40px;
+  font-size: 11px;
+  color: #545454;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: none;
+}
+
+@-webkit-keyframes fadeMeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeMeIn {
+  to {
+    opacity: 1;
+  }
+}
+/* prettify */
+
+body {
+  box-sizing: border-box;
+  background: #333;
+  height: 100vh;
+  overflow: hidden;
+  padding-top: 100px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ns-ScrollWrapper {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.ns-ScrollWrapper::-webkit-scrollbar {
+    display: none;
+    height: 0;
+    background-color: transparent;
+  }
+
+/* indictaor color for each tab should you need */
+/*
+.ns-TabNav_Indicator {
+  [data-active-tab="B"] & { background-color: black; }
+  [data-active-tab="C"] & { background-color: mediumaquamarine; }
+  [data-active-tab="D"] & { background-color: slateblue; }
+  [data-active-tab="E"] & { background-color: coral; }
+  [data-active-tab="F"] & { background-color: indianred; }
+  [data-active-tab="G"] & { background-color: $color-white; }
+}
+*/
