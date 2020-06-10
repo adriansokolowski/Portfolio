@@ -1,0 +1,94 @@
+* {
+    color: white;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+h1 {
+    color: #9f9f9e;
+}
+
+h1#name {
+    font-size: 48px;
+    color: white;
+}
+
+#person {
+    color: #9f9f9e;
+    margin-top: 200px;
+    line-height: 0.1;
+}
+
+#person h2 {
+    display: flex;
+    justify-content: flex-end;
+    color: #9f9f9e;
+}
+
+.darkred {
+    color: #9a0000;
+}
+
+h3 > i{
+    color: #ccc;
+    font-size: 32px;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 640px;
+}
+
+.grid-secondary {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-secondary-item {
+    grid-gap: 0px 75px;
+    padding: 0px 25px;
+}
+
+.grid-container {
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px 75px;
+    padding: 25px 25px;
+    color: #bbb4b3;
+    background-color: #0d0900;
+
+    -webkit-box-shadow: inset 0px 0px 300px 99px rgba(0,0,0,1);
+-moz-box-shadow: inset 0px 0px 300px 99px rgba(0,0,0,1);
+box-shadow: inset 0px 0px 300px 99px rgba(0,0,0,1);
+  }
+
+.grid-item {
+    color: #ccc;
+    background-color: #540300;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    -webkit-box-shadow: inset 0px 0px 150px 0px rgba(0,0,0,0.72);
+    -moz-box-shadow: inset 0px 0px 150px 0px rgba(0,0,0,0.72);
+    box-shadow: inset 0px 0px 150px 0px rgba(0,0,0,0.72);
+}
+
+#details {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #ccc;
+}
+
+#details i {
+    margin: 15px 15px;
+    color: #ccc;
+}
+
+
+
+
+
